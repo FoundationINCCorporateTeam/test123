@@ -6,8 +6,13 @@
 <body>
     <h1>Insert Form Data into Database</h1>
     <form method="post" action="insert.php">
-<input id="searchbar" type="text" name="search">
-<input id="searchsubmit" type="submit" name="searchsubmit">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea><br><br>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
