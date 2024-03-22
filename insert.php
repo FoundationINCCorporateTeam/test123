@@ -2,12 +2,10 @@
 $conn = mysqli_connect("sql300.infinityfree.com", "if0_36213692", "MN4444", "if0_36213692_mngames1");
 
 // Retrieve form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$search = $_POST['is'];
 
 // Construct SQL query
-$sql = "INSERT INTO your_table_name (name, email, message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO searchdata (search_query VALUES ('$search')";
 
 // Execute the query
 if (mysqli_query($conn, $sql)) {
